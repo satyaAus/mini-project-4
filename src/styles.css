@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #1c2b2d;
+  --light-blue: #005490;
+  --light-blue-border: #5cb5f4;
+  --color-secondary: #ff4500;
+  --grey: #eee;
+  --green: #32cd32;
+  --semi-transparent-dark-blue: rgba(1, 54, 95, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div {
+  width: 42rem;
+  border: 1px solid var(--light-blue-border);
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--semi-transparent-dark-blue);
+}
+
+.counter-div>* {
+  margin-bottom: 2rem;
+}
+
+.count {
+  font-size: 4rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.subtract {
+  background-color: var(--color-secondary);
+}
+
+button.reset {
+  background-color: var(--gray);
+  color: var(--black);
+}
+
+button.add {
+  background-color: var(--green);
+}
